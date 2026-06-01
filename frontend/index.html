@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧製造工廠現場異常應變與決策系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">⚠️ 工廠現場異常應變助理</div>
+            <p class="subtitle">24H 線上安全顧問兼現場主管決策系統</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h3>第一線現場口語化回報</h3>
+                <textarea id="reportInput" placeholder="例如：3號產線的包裝機冒煙了，味道很臭！或者是輸送帶卡住了，貨物一直堆上來..."></textarea>
+                <button id="submitBtn">送出通報並生成對策</button>
+            </section>
+
+            <div id="loading" class="hidden">AI 正在評估現場風險，請稍候...</div>
+
+            <section id="resultSection" class="result-section hidden">
+                <div class="card summary-card">
+                    <h4>📋 現場狀況智慧摘要</h4>
+                    <p id="summaryText">正在提取摘要...</p>
+                </div>
+
+                <div class="card sop-card">
+                    <h4>🚨 三點式緊急應變對策 (SOP)</h4>
+                    <ul id="sopList">
+                        <li>正在生成對策...</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
