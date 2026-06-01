@@ -1,5 +1,5 @@
 // ⚠️ 重要：部署完後端後，請把這裡改成 Hugging Face 提供給你的 API 網址
-const BACKEND_URL = "[https://n-93-factory-safety-api.hf.space/api/report](https://你的帳號-你的Space名稱.hf.space/api/report)"; 
+const BACKEND_URL = "https://n-93-factory-safety-api.hf.space/";
 
 document.getElementById('submitBtn').addEventListener('click', async () => {
     const textInput = document.getElementById('reportInput').value.trim();
